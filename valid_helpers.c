@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 08:54:14 by codespace         #+#    #+#             */
-/*   Updated: 2025/10/20 20:34:53 by codespace        ###   ########.fr       */
+/*   Updated: 2025/10/21 13:18:35 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,9 @@ void	check_vertical_walls(char **grid, int width, int height)
 		j++;
 	}
 }
-
+void	validate_char(char c)
+{
+	if (c != '0' && c != '1' && c != 'B' && c != 'E' && c != 'P')
+		error_exit("Invalid character in map");
+}
 

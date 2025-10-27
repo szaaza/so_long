@@ -29,6 +29,8 @@ int	main(int argc, char **argv)
 {
 	t_game	game;
 
+
+	
 	if (argc != 2)
 		error_exit("Usage: ./so_long <map.ber>");
 	begin_game(&game, argv[1]);
